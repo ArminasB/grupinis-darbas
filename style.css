@@ -1,3 +1,38 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    background-color: green;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+header {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.wrapper {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+img {
+    width: 50px;
+}
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    
+}
+.left-navigation {
+    display: flex;
+}
+.navigation-ul, .subscribe, .desktop-burger {
+    display: none;
+}
+.right-navigation {
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
