@@ -1,3 +1,6 @@
+body, html {
+    min-height: 100vh;
+}
 * {
     box-sizing: border-box;
 }
@@ -27,6 +30,7 @@ nav {
 }
 .left-navigation {
     display: flex;
+    align-items: center;
 }
 .navigation-ul, .right-navigation a, .desktop-burger {
     display: none;
@@ -141,4 +145,48 @@ form button{
     align-items: center;
     justify-content: center;
     height: 100%;
+}
+body > footer {
+    background-color: black;
+}
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding: 30px 0;
+    margin: 0;
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+@media  only screen and (min-width: 992px) {
+    .wrapper {
+        max-width: 960px;
+    }
+    .navigation-ul, .right-navigation a, .desktop-burger {
+        display: initial;
+    }
+    .navigation-ul ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .right-navigation a {
+        color: red;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 2px solid red;
+        padding-bottom: 5px;
+    }
+    .mobile-burger {
+        display: none;
+    }
+    
 }
