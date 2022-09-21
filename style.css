@@ -45,6 +45,16 @@ article {
     margin: 20px 0;
 }
 
+.big-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.big-card p {
+    margin: 0;
+}
+
 .big-card,
 .big-card img {
     width: 100%;
@@ -168,8 +178,10 @@ ul li a {
 }
 @media  only screen and (min-width: 992px) {
     .wrapper {
+        height: 100%;
         max-width: 960px;
     }
+
     .navigation-ul, .right-navigation a, .desktop-burger {
         display: initial;
     }
@@ -189,4 +201,55 @@ ul li a {
         display: none;
     }
     
+    .main-content {
+        display: flex;
+        gap: 50px
+    }
+
+    .featured h2 {
+        margin-top: 0;
+    }
+
+    .main-content article {
+        flex: 1;
+    }
+
+    .feature,
+    .stories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-card {
+        display: flex;
+        gap: 15px;
+        width: 100%;
+    }
+
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+    } 
+
+    .card-img img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .small-card:last-child {
+        display: block;
+    }
+
+    .small-card:last-child {
+        display: flex;
+    }
+
+    .hero-flex {
+        height: 100%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+
 }
