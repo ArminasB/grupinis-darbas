@@ -28,7 +28,7 @@ nav {
 .left-navigation {
     display: flex;
 }
-.navigation-ul, .subscribe, .desktop-burger {
+.navigation-ul, .right-navigation a, .desktop-burger {
     display: none;
 }
 .right-navigation {
@@ -48,16 +48,18 @@ article {
 .big-card img {
     object-fit: cover;
 }
-.red {
+.big-card span,
+.small-card span {
     text-transform: uppercase;
     color: red;
     font-size: 10px;
 }
-.big-card .content {
+.big-card p {
     font-size: 30px;
     font-weight: 600;
 }
-.big-card p:last-child {
+.big-card footer,
+.small-card footer {
     color: gray;
     text-transform: uppercase;
     font-size: 10px;
@@ -96,7 +98,46 @@ article {
 
 .hero {
     background-image: url("https://t3.ftcdn.net/jpg/02/09/64/28/360_F_209642851_wl5iUgHZRvkcysbisHS1IeB0M1HTDyQz.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 50vh;
+}
+
+form{
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    margin: 0;
+}
+input{
+    border: none;
+    border-bottom: 2px solid red;
+    padding: 10px 0 0 0;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+}
+
+input::placeholder{
+    color: grey;
+    font-size: 20px;
+}
+
+form button{
+    width: 50px;
+    min-width: 40%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+}
+.hero-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
